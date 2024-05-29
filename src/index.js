@@ -14,6 +14,38 @@ const player2 = {
   SCORE: '0',
 }
 
+const player3 = {
+  NAME: 'Peach',
+  SPEED: '3',
+  MANEUVERABILITY: '4',
+  POWER: '2',
+  SCORE: '0',
+}
+
+const player4 = {
+  NAME: 'Yoshi',
+  SPEED: '2',
+  MANEUVERABILITY: '4',
+  POWER: '3',
+  SCORE: '0',
+}
+
+const player5 = {
+  NAME: 'Bowser',
+  SPEED: '5',
+  MANEUVERABILITY: '2',
+  POWER: '5',
+  SCORE: '0',
+}
+
+const player6 = {
+  NAME: 'Donkey Kong',
+  SPEED: '2',
+  MANEUVERABILITY: '2',
+  POWER: '5',
+  SCORE: '0',
+}
+
 async function rollDice() {
   return Math.floor(Math.random() * 6) + 1
 }
