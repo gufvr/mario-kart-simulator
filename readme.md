@@ -76,28 +76,28 @@
 
 <p></p>
 
-<h3>🕹️ Regras & mecânicas:</h3>
+## Descrição do Projeto
+Este projeto é um simulador de corrida entre personagens icônicos do universo Mario. Os personagens Mario, Luigi, Peach, Yoshi, Bowser e Donkey Kong competem em uma série de rodadas, cada uma contendo diferentes tipos de desafios, incluindo retas, curvas e confrontos diretos.
 
-<b>Jogadores:</b>
+## Funcionalidades Principais
+- Seleção Aleatória de Personagens: Dois personagens são selecionados aleatoriamente para competir em cada corrida.
+- Simulação de Rodadas: A corrida é dividida em 5 rodadas, com diferentes tipos de blocos (reta, curva, confronto) determinados aleatoriamente.
+- Rolagem de Dados: Em cada rodada, os personagens rolam um dado que, combinado com seus atributos específicos (velocidade, manobrabilidade, poder), determina o desempenho na rodada.
+- Sistema de Pontuação: Os personagens ganham pontos com base no desempenho em cada rodada. Em confrontos diretos, personagens podem perder pontos.
+- Declaração de Vencedor: Ao final das 5 rodadas, o personagem com a maior pontuação é declarado vencedor.
 
-<input type="checkbox" id="jogadores-item" />
-<label for="jogadores-item">O Computador deve receber dois personagens para disputar a corrida em um objeto cada</label>
+## Atributos dos Personagens
+- Velocidade (SPEED): Determina a vantagem em blocos de reta.
+- Manobrabilidade (MANEUVERABILITY): Determina a vantagem em blocos de curva.
+- Poder (POWER): Determina a vantagem em blocos de confronto.
+- Pontuação (SCORE): Acumulada ao longo das rodadas para determinar o vencedor.
 
-<b>Pistas:</b>
+## Exemplo de Uso
+Ao iniciar o simulador, dois personagens são escolhidos aleatoriamente para competir. A cada rodada, o tipo de bloco é determinado e os personagens rolam um dado. O resultado do dado, somado ao atributo relevante do personagem, determina quem ganha a rodada. Após 5 rodadas, o personagem com mais pontos é declarado vencedor.
 
-<ul>
-  <li><input type="checkbox" id="pistas-1-item" /> <label for="pistas-1-item">Os personagens irão correr em uma pista aleatória de 5 rodadas</label></li>
-  <li><input type="checkbox" id="pistas-2-item" /> <label for="pistas-2-item">A cada rodada, será sorteado um bloco da pista que pode ser uma reta, curva ou confronto</label>
-    <ul>
-      <li><input type="checkbox" id="pistas-2-1-item" /> <label for="pistas-2-1-item">Caso o bloco da pista seja uma RETA, o jogador deve jogar um dado de 6 lados e somar o atributo VELOCIDADE, quem vencer ganha um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-2-item" /> <label for="pistas-2-2-item">Caso o bloco da pista seja uma CURVA, o jogador deve jogar um dado de 6 lados e somar o atributo MANOBRABILIDADE, quem vencer ganha um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-3-item" /> <label for="pistas-2-3-item">Caso o bloco da pista seja um CONFRONTO, o jogador deve jogar um dado de 6 lados e somar o atributo PODER, quem perder, perde um ponto</label></li>
-      <li><input type="checkbox" id="pistas-2-3-item" /> <label for="pistas-2-3-item">Nenhum jogador pode ter pontuação negativa (valores abaixo de 0)</label></li>
-    </ul>
-  </li>
-</ul>
+## Tecnologias Utilizadas
+- JavaScript (ES6)
+- Node.js
+- Funções assíncronas para operações de jogo
 
-<b>Condição de vitória:</b>
-
-<input type="checkbox" id="vitoria-item" />
-<label for="vitoria-item">Ao final, vence quem acumulou mais pontos</label>
+Este projeto demonstra habilidades de manipulação de objetos, uso de funções assíncronas, lógica de jogo e simulação, sendo um ótimo exemplo de como aplicar conceitos de programação em um contexto de entretenimento.
